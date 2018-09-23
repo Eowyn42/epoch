@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_epoch():
-    return time.time()
+    return str(round(time.time()))
 
 
 if __name__ == '__main__':
